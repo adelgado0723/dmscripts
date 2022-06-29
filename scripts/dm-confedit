@@ -2,7 +2,7 @@
 #
 # Script name: dm-confedit
 # Description: Choose from a list of configuration files to edit.
-# Dependencies: dmenu, emacsclient
+# Dependencies: dmenu
 # GitLab: https://www.gitlab.com/dwt1/dmscripts
 # License: https://www.gitlab.com/dwt1/dmscripts/LICENSE
 # Contributors: Derek Taylor

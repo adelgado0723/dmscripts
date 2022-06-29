@@ -71,10 +71,10 @@ help(){
 }
 
 play(){
-    mpc crop > /dev/null 2>&1
+    mpc crop > /dev/null 2>&1 &
     music="$(mpc listall | ${DMENU} "Music to play")" || exit 1
     mpc -q add "$music"
-    mpc del 0 > /dev/null 2>&1
+    mpc del 0 > /dev/null 2>&1 &
     mpc play
     mpc repeat on
 }

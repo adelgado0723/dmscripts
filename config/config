@@ -9,16 +9,15 @@
 
 # -p is needed as we use prompts, alternative programs have to handle prompts well.
 
-DMENU="dmenu -i -l 20 -p"
+DMENU="dmenu -l 20 -p"
 
 DMBROWSER="brave"
 # DMBROWSER="qutebrowser"
 
-DMTERM="st -e"
-# DMTERM="alacritty -e"
+# DMTERM="st -e"
+DMTERM="alacritty -e"
 
-DMEDITOR="emacsclient -c -a emacs"
-# DMEDITOR="${DMTERM} vim"
+DMEDITOR="${DMTERM} nvim"
 
 # TODO: Rename this variable to something more traditional
 logout_locker='slock'
@@ -57,7 +56,7 @@ bookman_show_source=1
 sounds_dir="${HOME}/.config/dmscripts/dmsounds"
 
 # dm-setbg
-setbg_dir="${HOME}/Pictures/Wallpapers"
+setbg_dir="${HOME}/home/adelg/wallpapers/"
 # Set this to 1 if you want to use imv and wayland, 0 if you want to use sxiv
 # Note that sxiv is X11 only, you need to mark the image you want to use.
 use_imv=0 
@@ -102,7 +101,7 @@ confedit_list[stumpwm]="$HOME/.config/stumpwm/config"
 confedit_list[surf]="$HOME/surf-distrotube/config.def.h"
 confedit_list[sxhkd]="$HOME/.config/sxhkd/sxhkdrc"
 confedit_list[tabbed]="$HOME/tabbed-distrotube/config.def.h"
-confedit_list[vifm]="$HOME/.config/vifm/vifmrc"
+confedit_list[nvim]="$HOME/.config/nvim/init.lua"
 confedit_list[vim]="$HOME/.vimrc"
 confedit_list[xmobar mon1]="$HOME/.config/xmobar/xmobarrc0"
 confedit_list[xmobar mon2]="$HOME/.config/xmobar/xmobarrc1"
@@ -115,18 +114,20 @@ confedit_list[zsh]="$HOME/.zshrc"
 # dm-reddit config
 declare -a reddit_list=(
 "r/archlinux"
-"r/bash"
-"r/commandline"
-"r/emacs"
+"r/Programming"
+"r/ProgrammerHumor"
+"r/webdev"
 "r/freesoftware"
 "r/linux"
-"r/linux4noobs"
-"r/linuxmasterrace"
-"r/linuxquestions"
-"r/suckless"
-"r/Ubuntu"
+"r/golang"
+"r/hacking"
+"r/cybersecurity"
 "r/unixporn"
 "r/vim"
+"r/bjj"
+"r/jiujitsu"
+"r/judo"
+"r/wrestling"
 )
 
 # Search engine config 
