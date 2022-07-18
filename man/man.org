@@ -62,6 +62,8 @@ Simple graphical weather app
 Connect to wifi using dmenu.
 ** dm-youtube
 Youtube subscriptions without an account or the API tying you down.
+** dm-emoji
+Emoji searcher, search for an emoji and copy it to the clipboard.
 ** _dm-helper.sh
 Helper scripts adding functionality to other scripts
 

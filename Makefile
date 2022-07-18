@@ -4,6 +4,7 @@ NAME = dmscripts
 
 PREFIX ?= /usr
 SCRIPTS := $(wildcard ./scripts/*)
+LIBS := $(wildcard ./lib/*)
 SHARE != [ -d ${PREFIX}/share/man ] && echo /share || true
 MANPREFIX ?= ${PREFIX}${SHARE}/man
 
@@ -20,6 +21,7 @@ build:
 install:
 	echo $(DESTDIR)$(MANPREFIX)
 	install -Dm 775 $(SCRIPTS) -t $(DESTDIR)$(PREFIX)/bin/
+	install -Dm 775 $(LIBS) -t $(DESTDIR)$(PREFIX)/lib/
 	install -Dm 644 man/dmscripts.1.gz $(DESTDIR)$(MANPREFIX)/man1/dmscripts.1.gz
 	install -Dm644 LICENSE "$(DESTDIR)$(PREFIX)/share/licenses/$(NAME)/LICENSE"
 	install -Dm644 README.md "$(DESTDIR)$(PREFIX)/share/doc/$(NAME)/README.md"
