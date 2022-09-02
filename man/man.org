@@ -26,6 +26,14 @@ Find the hex value of a color you are searching for.
 A configuration manager, find and edit any config file you need.
 ** dm-currencies
 Convert prices between currencies.
+** dm-docker-kill
+Stop a running docker container.
+** dm-docker-rm
+Remove a docker container.
+** dm-emoji
+Emoji searcher, search for an emoji and copy it to the clipboard.
+** dm-icon
+Fontawesome icon searcher, search for an emoji and copy it to the clipboard.
 ** dm-ip
 Get IP of interface or external IP
 ** dm-kill
@@ -50,6 +58,10 @@ A reddit viewer using dmenu, still a work in progress.
 Using dmenu, setup a wallpaper.
 ** dm-sounds
 Choose an ambient background sound to play.
+** dm-tmux-cht.sh
+Look up sytanx help for multiple languages and tools.
+** dm-tmux-sessionizer
+Start a tmux session in a commonly visited folder.
 ** dm-translate
 Translate using Google Translate (through Lingva Translate)
 ** dm-usbmount
@@ -62,8 +74,6 @@ Simple graphical weather app
 Connect to wifi using dmenu.
 ** dm-youtube
 Youtube subscriptions without an account or the API tying you down.
-** dm-emoji
-Emoji searcher, search for an emoji and copy it to the clipboard.
 ** _dm-helper.sh
 Helper scripts adding functionality to other scripts
 

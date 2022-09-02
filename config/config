@@ -124,6 +124,7 @@ declare -a reddit_list=(
 "r/cybersecurity"
 "r/unixporn"
 "r/vim"
+"r/neovim"
 "r/bjj"
 "r/jiujitsu"
 "r/judo"
