@@ -26,7 +26,7 @@ source "$(get_config)"
 
 main() {
 glyphlist='/usr/lib/glyphlist'
-font_family='"FantasqueSansMono Nerd Font Mono"'
+font_family='"Fantasque Sans Mono"'
 font_size="25"
 # Get user selection via dmenu from emoji file.
 if [ -e $glyphlist ]
