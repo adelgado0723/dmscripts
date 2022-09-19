@@ -33,7 +33,7 @@ main() {
         selected=$1
     else
         # These paths should be moved into configuration 
-        selected=$(find /home/adelg/dev/ /home/adelg/Downloads/ /home/adelg/.config/ /home/adelg/ /home/  -mindepth 1 -maxdepth 1 -type d | sort | dmenu)
+        selected=$(find -L /home/adelg/dev/ /home/adelg/Downloads/ /home/adelg/.config/ /home/adelg/ /home/  -mindepth 1 -maxdepth 1 -type d | sort | dmenu)
     fi
     
     if [[ -z $selected ]]; then
