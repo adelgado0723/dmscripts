@@ -26,6 +26,7 @@ tee
 tmux
 udisks2
 xargs
+xclip
 xrandr
 xwallpaper or swaybg
 yad
