@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
 # Script name: dm-icons
-# Description: copy emoji to clipboard
-# Dependencies: dmenu, python3, awk, xclip, notify-send
+# Description: select icon and copy it to the clipboard
+# Dependencies: dmenu, python3, awk, xclip, notify-send, curl, xdotool
 # GitLab: 
 
 

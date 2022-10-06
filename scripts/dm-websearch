@@ -2,7 +2,7 @@
 #
 # Script name: dm-websearch
 # Description: Search various search engines (inspired by surfraw).
-# Dependencies: dmenu and brave
+# Dependencies: dmenu, brave, jq
 # GitLab: https://www.gitlab.com/dwt1/dmscripts
 # License: https://www.gitlab.com/dwt1/dmscripts/LICENSE
 # Contributors: Derek Taylor

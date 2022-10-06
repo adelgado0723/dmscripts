@@ -9,7 +9,7 @@
 
 # -p is needed as we use prompts, alternative programs have to handle prompts well.
 
-DMENU="dmenu -l 20 -p"
+DMENU="dmenu -l 20 -z 500 -p"
 
 DMBROWSER="brave"
 # DMBROWSER="qutebrowser"
@@ -66,7 +66,7 @@ maim_dir="${HOME}/Screenshots"
 maim_file_prefix="maim"
 
 # dm-note
-note_dir="${HOME}/.config/dmscripts/dmnote"
+note_dir="${HOME}/.config/dmenu/dmscripts/notes"
 
 # dm-confedit
 declare -A confedit_list

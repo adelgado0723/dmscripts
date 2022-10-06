@@ -2,7 +2,7 @@
 #
 # Script name: dm-tmux-cht.sh
 # Description: Query cht.sh for help with the syntax of many languages and tools
-# Dependencies: dmenu, tmux
+# Dependencies: dmenu, tmux, curl
 # GitLab: https://github.com/adelgado0723/dmscripts
 # Contributors: Derek Taylor, Andy Delgado
 

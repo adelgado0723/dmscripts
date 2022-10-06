@@ -2,7 +2,7 @@
 #
 # Script name: dm-hub
 # Description: a hub that you can execute all the other scripts from
-# Dependencies: dmenu, executable dmscripts, all the dependancies from dmscripts
+# Dependencies: dmenu, executable dmscripts, all the dependencies from dmscripts
 # GitLab: https://www.gitlab.com/dwt1/hub
 # License: https://www.gitlab.com/dwt1/dmscripts/LICENSE
 # Contributors: n-e0

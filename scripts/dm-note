@@ -2,7 +2,7 @@
 #
 # Script name: dm-note
 # Description: Store multiple one-line texts or codes and copy one of them when needed.
-# Dependencies: dmenu, xclip
+# Dependencies: dmenu, xclip, notify-send
 # GitLab: https://www.gitlab.com/dwt1/dmscripts
 # License: https://www.gitlab.com/dwt1/dmscripts/LICENSE
 # Contributors: Fawzakin

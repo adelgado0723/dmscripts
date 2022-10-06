@@ -2,7 +2,7 @@
 #
 # script name: dm-wifi
 # Description: Connect to wifi using dmenu
-# Dependencies: dmenu, nmcli, Any Nerd Font
+# Dependencies: dmenu, nmcli, Any Nerd Font, notify-send
 # Contributor: WitherCubes
 
 set -euo pipefail
