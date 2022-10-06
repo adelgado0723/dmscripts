@@ -7,30 +7,42 @@ Scripts I use every day.
 On Arch-based systems:
 
 ```
+a nerd font
 alsa
 arch-wiki-docs
-brave browser
+awk
+brave
+curl
+dig
 docker
+ffmpeg
 imv
+ip
 jq
 maim
 mpc
 mpd
 mpv
+nmcli
+notify-send
 pulseaudio
+python3
 qutebrowser
 reddio
 slock
+slop (for recording a specific area)
 systemd
 tee
 tmux
 udisks2
 xargs
 xclip
+xdotool
 xrandr
 xwallpaper or swaybg
 yad
 youtube-dl
+
 ```
 
 ## Clone
