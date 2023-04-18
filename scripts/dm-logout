@@ -91,11 +91,11 @@ main() {
             fi
             ;;
         'Suspend')
-            if [[ "$(echo -e "No\nYes" | ${DMENU} "${choice}?" "${@}" )" == "Yes" ]]; then
-                systemctl suspend
-            else
-                output "User chose not to suspend." && exit 0
-            fi
+            # if [[ "$(echo -e "No\nYes" | ${DMENU} "${choice}?" "${@}" )" == "Yes" ]]; then
+            systemctl suspend
+            # else
+                # output "User chose not to suspend." && exit 0
+            # fi
             ;;
         'Quit')
             output "Program terminated." && exit 0
