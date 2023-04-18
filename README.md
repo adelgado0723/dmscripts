@@ -29,7 +29,7 @@ pulseaudio
 python3
 qutebrowser
 reddio
-slock
+i3lock
 slop (for recording a specific area)
 systemd
 tee
@@ -156,7 +156,7 @@ Search for a process to kill.
 Logout, shutdown, reboot or lock screen.
 
 - systemd
-- slock
+- lock** (needs custom "lock" command on the system)
 - notify-send
 
 ### dm-maim

@@ -20,7 +20,7 @@ optdepends=(
   'qutebrowser: used by dm-bookman'
   'reddio: used by dm-reddit'
   'yad: used by dm-reddit and dm-weather'
-  'slock: used by dm-logout'
+  'i3lock: used by dm-logout'
   'imv: the default image viewer used by dm-setbg, supports wayland'
   'sxiv: an alternative image viewer used by dm-setbg, X11 only'
   'xwallpaper: used by dm-setbg in x11'

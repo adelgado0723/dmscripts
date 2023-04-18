@@ -9,7 +9,7 @@
 
 # -p is needed as we use prompts, alternative programs have to handle prompts well.
 
-DMENU="dmenu -l 20 -p"
+DMENU="dmenu -l 20 -nf #F8F8F2 -nb #282A36 -sb #6272A4 -sf #F8F8F2 -p"
 
 DMBROWSER="brave"
 # DMBROWSER="qutebrowser"
@@ -19,8 +19,8 @@ DMTERM="alacritty -e"
 
 DMEDITOR="${DMTERM} nvim"
 
-# TODO: Rename this variable to something more traditional
-logout_locker='slock'
+# i3lock with dracula theme
+logout_locker='lock'
 # logout_locker='dm-tool lock'
 
 # This case statement lets you change what the DMENU variable is for different scripts, so if you
