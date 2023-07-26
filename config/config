@@ -14,6 +14,9 @@ DMENU="dmenu -l 20 -nf #F8F8F2 -nb #282A36 -sb #6272A4 -sf #F8F8F2 -p"
 DMBROWSER="brave"
 # DMBROWSER="qutebrowser"
 
+TERM='dumb'
+DISPLAY=':1'
+
 # DMTERM="st -e"
 DMTERM="alacritty -e"
 

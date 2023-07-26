@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+#
+# Script name: dm-nordlayer
+# Description: A dmenu wrapper for nordlayer vpn
+# Dependencies: dmenu, nordlayer
+# GitLab: https://github.com/adelgado0723/dmscripts
+# Contributors: Derek Taylor, Andy Delgado
+
+# Set with the flags "-e", "-u","-o pipefail" cause the script to fail
+# if certain things happen, which is a good thing.  Otherwise, we can
+# get hidden bugs that are hard to discover.
+
+set -euo pipefail
+
+_path="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd "$(dirname "$(readlink "${BASH_SOURCE[0]}" || echo ".")")" && pwd)"
+if [[  -f "${_path}/_dm-helper.sh" ]]; then
+  # shellcheck disable=SC1090,SC1091
+  source "${_path}/_dm-helper.sh"
+else
+  # shellcheck disable=SC1090
+  echo "No helper-script found"
+fi
+
+# script will not hit this if there is no config-file to load
+# shellcheck disable=SC1090
+source "$(get_config)"
+
+# use notify-send if run in dumb term
+# TODO: add abillity to control from config.
+_out="echo"
+if [[ ${TERM} == 'dumb' ]]; then
+    _out="notify-send"
+fi
+
+output(){
+    ${_out} "dm-nordlayer" "$@"
+}
+
+main() {
+    # An array of options to choose.
+    declare -a options=(
+    "Connect"
+    "Disconnect"
+    "Gateways"
+    "Login"
+    "Logout"
+    "Resart Daemon"
+    "Settings"
+    "Status"
+    "Version"
+    )
+
+    # Piping the above array into dmenu.
+    # We use "printf '%s\n'" to format the array one item to a line.
+    choice=$(printf '%s\n' "${options[@]}" | ${DMENU} 'Nordlayer Menu:' "${@}")
+
+    # What to do when/if we choose one of the options.
+    case $choice in
+        'Connect')
+            out=$(nordlayer connect impact-karma-gateway-0MaNVntFv0)
+            ;;
+        'Disconnect')
+            out=$(nordlayer disconnect)
+            ;;
+        'Gateways')
+            out=$(nordlayer gateways)
+            ;;
+        'Login')
+            out=$(nordlayer login)
+            ;;
+        'Logout')
+            out=$(nordlayer logout)
+            ;;
+        'Restart Daemon')
+            out=$(sudo systemctl restart nordlayer.service)
+            ;;
+        'Settings')
+            settingsChoice=$(echo -e "2fa\nget\nlist\nnetworks\nset\nswg" | ${DMENU} "${choice}?" "${@}" )
+              out=$(nordlayer settings "${settingsChoice}")
+            ;;
+        'Status')
+            out=$(nordlayer status)
+            ;;
+        'Version')
+            out=$(nordlayer version)
+            ;;
+        # It is a common practice to use the wildcard asterisk symbol (*) as a final
+        # pattern to define the default case. This pattern will always match.
+        *)
+            exit 0
+        ;;
+    esac
+    output "${out}"
+
+}
+
+[[ "${BASH_SOURCE[0]}" == "${0}" ]] && main "$@"
+fi

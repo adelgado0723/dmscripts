@@ -17,6 +17,7 @@ optdepends=(
   'maim: used by dm-main'
   'mpc: used by dm-music'
   'mpd: used by dm-music'
+  'nordlayer: used by dm-nordlayer'
   'qutebrowser: used by dm-bookman'
   'reddio: used by dm-reddit'
   'yad: used by dm-reddit and dm-weather'

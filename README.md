@@ -182,6 +182,12 @@ Music player using dmenu
 - mpd
 - mpc
 
+### dm-nordlayer
+
+A nordlayer wrapper using DMENU
+
+- nordlayer
+
 ### dm-note
 
 Store multiple one-line texts or codes and copy one of them when needed.

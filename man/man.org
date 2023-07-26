@@ -46,6 +46,8 @@ A GUI to maim using dmenu.
 A manual page searcher, search a man page or randomly view one.
 ** dm-music
 Dmenu based music player.
+** dm-nordlayer
+A dmenu wrapper for nordlayer vpn
 ** dm-note
 Store multiple one-line texts or codes and copy one of them when needed.
 ** dm-radio
