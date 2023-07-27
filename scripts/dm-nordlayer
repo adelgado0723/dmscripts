@@ -57,7 +57,8 @@ main() {
     # What to do when/if we choose one of the options.
     case $choice in
         'Connect')
-            out=$(nordlayer connect impact-karma-gateway-0MaNVntFv0)
+            echo "yes" | nordlayer connect impact-karma-gateway-0MaNVntF
+            out=$(nordlayer status)
             ;;
         'Disconnect')
             out=$(nordlayer disconnect)
@@ -76,7 +77,7 @@ main() {
             ;;
         'Settings')
             settingsChoice=$(echo -e "2fa\nget\nlist\nnetworks\nset\nswg" | ${DMENU} "${choice}?" "${@}" )
-              out=$(nordlayer settings "${settingsChoice}")
+            out=$(nordlayer settings "${settingsChoice}")
             ;;
         'Status')
             out=$(nordlayer status)
@@ -95,4 +96,3 @@ main() {
 }
 
 [[ "${BASH_SOURCE[0]}" == "${0}" ]] && main "$@"
-fi
